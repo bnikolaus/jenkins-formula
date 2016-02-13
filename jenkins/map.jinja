@@ -1,7 +1,7 @@
 {% set jenkins = salt['grains.filter_by']({
     'default': {
         'pkgs': ['jenkins'],
-        'netcat_pkg': 'netcat',
+        'netcat_pkg': 'nc',
         'user': 'jenkins',
         'group': 'jenkins',
         'nginx_user': 'nginx',
