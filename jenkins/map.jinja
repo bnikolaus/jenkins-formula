@@ -1,11 +1,11 @@
 {% set jenkins = salt['grains.filter_by']({
     'default': {
         'pkgs': ['jenkins'],
-        'netcat_pkg': 'netcat-openbsd',
+        'netcat_pkg': 'netcat',
         'user': 'jenkins',
         'group': 'jenkins',
-        'nginx_user': 'www-data',
-        'nginx_group': 'www-data',
+        'nginx_user': 'nginx',
+        'nginx_group': 'nginx',
         'home': '/var/lib/jenkins',
         'port': '80',
         'jenkins_port': 8080,
